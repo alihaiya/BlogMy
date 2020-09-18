@@ -9,6 +9,11 @@
   * [Java集合](./docsurl/b-2Java集合.md)
   * [Java多线程](./docsurl/b-3Java多线程.md)
   * [jvm](./docsurl/b-4jvm.md)
+  
+* 测试
+  * [测试1](./docsurl/url1/1.md) 
+  * [测试2](./docsurl/url1/2.md) 
+
 
 * 计算机基础
 
@@ -18,6 +23,4 @@
   * [操作系统](./docsurl/c-4操作系统.md)
   * [临时文件](./docsurl/d-1临时.md)
 
- * 测试
-   * [测试1](./docsurl/url1/1.md) 
 
