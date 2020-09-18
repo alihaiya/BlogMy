@@ -1,0 +1,40 @@
+
+## 随记
+
+### 支付跳码
+
+```java
+线下商户交易，可能会存在跳码的问题；而线上则不存在。 
+跳码有两种情况，一种是商户类别跳码，一种是交易地点跳码。 
+线下POS消费需要通过银联进行交易。银联针对不同类别的商户，制定了不同的交易费率，标准类费率为0.6%，优惠类费率为0.38%，公益类费率为0%。 
+用户消费商户的类型，和实际交易通道的商户类型不一致，就称之为跳码，比如用户消费类型为标准类，而实际支付通道的消费类型为优惠类或者公益类，就是跳码。 
+商户类别跳码的情况严重影响了发卡行的收益，因此，对于持卡人来说，经常使用跳码POS刷卡，会被银行列入风控名单中。 
+交易地点跳码，就是消费商户的地点和交易地点不一致，会被银行认为是套现行为，持卡人同样有可能会被列入银行的风控名单中。 
+而线上商户交易，其本身就是互联网商户，不存在交易地点跳码的情况；另外，虽然线上交易渠道也有费率高低区分，但是却不存在跳码的情况，因为线上交易通道的费率，一般都要比线下低。 
+
+```
+ 
+
+### String数组使用场景
+```java
+@Test
+publicvoidtest1(){
+    String[]totalData=newString[]{};
+    StringBuildersb=newStringBuilder();
+    sb.append("总计").append("/").append("/").append("/").append("/").append("/");
+    sb.append("01").append("/").append("02").append("/").append("03").append("/")
+    .append("04").append("/").append("05");
+    StringsbStr=sb.toString();
+    logger.info("sumdatais:"+sbStr);
+    totalData=sbStr.split("/");
+    for(inti=0;i<totalData.length;i++){
+    System.out.println(totalData[i]);
+    }
+}
+
+``` 
+ 
+**Excel工具类**
+
+> 使用创建转换器衬例
+    
