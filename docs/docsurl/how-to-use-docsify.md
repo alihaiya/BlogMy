@@ -207,7 +207,7 @@ _一般建议将文档放进 docs 文件下面，可以参考我的仓库：[htt
     window.$docsify = {
       ......
       plugins: [
-        EditOnGithubPlugin.create('https://github.com/Snailclimb/JavaGuide-Interview/blob/master/')
+        EditOnGithubPlugin.create('https://github.com/alihaiya/BlogMy/tree/master/')
       ],
     }
   </script>
