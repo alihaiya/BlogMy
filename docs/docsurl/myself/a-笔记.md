@@ -34,7 +34,28 @@ publicvoidtest1(){
 
 ``` 
  
-**Excel工具类**
+### Excel工具类
 
 > 使用创建转换器衬例
+
+### Maven 
+#### 常用命令
+* 打包命令
+>  Mvn claen package -DskipTest=true -Ppro    说明：  mvn命令行打包,-P 后指定使用环境配置
+* 设置POM.xml 
+```
+在标签 profile  下配置 
+<activation>
+<activeByDefault>true</activeByDefault>
+</acivation>
+```
+    
+ 
+  
+
+
+
+
+
+
     
